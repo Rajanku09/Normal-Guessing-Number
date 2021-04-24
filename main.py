@@ -4,12 +4,12 @@ winning_number=random.randint(1,100)
 guess_number=int(input("enter your number"))
 
 count=1
-flag=False
+flag=True
 
-while not flag:
+while flag:
     if guess_number==winning_number:
         print("You Win in {} Times ".format(count))
-        flag=True
+        flag=False
 
     elif guess_number<winning_number:
         print("enter above")
